@@ -12,7 +12,7 @@ CORS_ALLOW_ALL_ORIGINS = True
 
 
 # Debug mode (should be False in production)
-DEBUG = os.environ.get('DJANGO_DEBUG', 'True') == 'True'
+DEBUG = False
 
 # Allowed hosts
 ALLOWED_HOSTS = os.environ.get('DJANGO_ALLOWED_HOSTS', '127.0.0.1,localhost').split(',')
