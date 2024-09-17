@@ -1,0 +1,51 @@
+# Core Django & REST Framework for Web Backend
+Django==4.2.4
+djangorestframework==3.14.0
+django-cors-headers==3.14.0
+django-environ==0.10.0
+psycopg2==2.9.3  # PostgreSQL or use mysqlclient for MySQL
+celery==5.3.0
+django-celery-beat==2.5.0
+django-celery-results==2.5.1
+whitenoise==6.2.0
+gunicorn==20.1.0
+djangorestframework-simplejwt==5.2.2
+django-channels==0.7.0  # for WebSockets
+
+# AI/ML Libraries
+tensorflow==2.13.0  # or tensorflow-gpu for GPU support
+torch==2.0.1  # or torch with CUDA support
+scikit-learn==1.2.0
+pandas==2.0.3
+numpy==1.24.0
+matplotlib==3.7.0
+seaborn==0.12.0
+scipy==1.11.0
+xgboost==1.7.6
+lightgbm==3.3.5
+joblib==1.3.1
+opencv-python==4.7.0.72
+transformers==4.32.0  # for NLP with Hugging Face models
+nltk==3.8.1  # for NLP tasks
+spacy==3.5.3  # for NLP processing
+pillow==9.5.0  # for image handling
+
+# AI Model Deployment
+flask==2.3.2  # Optional: lightweight microservice for serving models
+fastapi==0.95.2  # Optional: high-performance API for serving ML models
+uvicorn==0.22.0  # Optional: ASGI server for FastAPI
+mlflow==2.6.0  # for managing ML experiments
+boto3==1.18.0  # For AWS integration if needed
+
+# Data Serialization & Saving Models
+h5py==3.8.0  # For saving and loading models (e.g., TensorFlow models)
+pydantic  # For FastAPI data validation
+
+# Additional Libraries
+pytest==7.1.3  # For testing
+pytest-django==4.5.2
+django-debug-toolbar==3.8.1
+black==22.8.0  # Code formatting
+isort==5.10.1  # Sorting imports
+django-extensions==3.2.0  # Useful Django tools
+

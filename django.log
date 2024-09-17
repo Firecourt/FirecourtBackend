@@ -206,3 +206,14 @@ Watching for file changes with StatReloader
 Not Found: /
 Not Found: /
 Not Found: /
+couldn't import psycopg 'c' implementation: No module named 'psycopg_c'
+couldn't import psycopg 'binary' implementation: No module named 'psycopg_binary'
+couldn't import psycopg 'c' implementation: No module named 'psycopg_c'
+couldn't import psycopg 'binary' implementation: No module named 'psycopg_binary'
+Watching for file changes with StatReloader
+/home/cyberbitch/FirecourtCorp/FirecourtBackend/FirecourtBackend/settings.py changed, reloading.
+couldn't import psycopg 'c' implementation: No module named 'psycopg_c'
+couldn't import psycopg 'binary' implementation: No module named 'psycopg_binary'
+couldn't import psycopg 'c' implementation: No module named 'psycopg_c'
+couldn't import psycopg 'binary' implementation: No module named 'psycopg_binary'
+Watching for file changes with StatReloader
