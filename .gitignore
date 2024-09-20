@@ -1,0 +1,5 @@
+# GitHub settings
+.github/
+
+#Logs
+*.log
