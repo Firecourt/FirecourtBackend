@@ -1,5 +1,8 @@
 # GitHub settings
 .github/
 
-#Logs
+# Logs
 *.log
+
+# Environment
+.env

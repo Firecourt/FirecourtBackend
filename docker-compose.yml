@@ -1,0 +1,31 @@
+services:
+    db:
+        container_name: postgres-db
+        image: postgres
+        environment:
+            - POSTGRES_USER=${DATABASE_USER}
+            - POSTGRES_PASSWORD=${DATABASE_PASSWORD}
+            - POSTGRES_DB=${DATABASE_NAME}
+        volumes:
+            - ./pgdata:/var/lib/postgresql/data
+        restart: always
+    
+    django:
+        container_name: backend
+        build:
+            dockerfile: ./Dockerfile
+        environment:
+            - POSTGRES_USER=${DATABASE_USER}
+            - POSTGRES_PASSWORD=${DATABASE_PASSWORD}
+            - POSTGRES_DB=${DATABASE_NAME}
+        command: python manage.py runserver 0.0.0.0:8000
+        ports:
+            - 8000:8000
+        depends_on:
+            - db
+        volumes:
+            - .:Backend
+
+volumes:
+    pgdata:
+    pgadmin-data:
